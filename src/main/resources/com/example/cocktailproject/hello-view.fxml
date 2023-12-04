@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cocktailproject.HelloController" style="-fx-background-color: #333; -fx-text-fill: white;">
+    <Label text="Cocktail Explorer" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #EEE;"/>
+    <TextField fx:id="searchField" promptText="Search for cocktails" style="-fx-background-color: #444; -fx-text-fill: white;"/>
+    <Button text="Search" onAction="#onSearchButtonClick" style="-fx-background-color: #3c3f41; -fx-text-fill: white; -fx-border-color: #555759; -fx-border-radius: 5;"/>
+    <ListView fx:id="resultsList" prefHeight="200.0" style="-fx-background-color: #444; -fx-text-fill: white; -fx-border-color: #555759;"/>
+</VBox>
