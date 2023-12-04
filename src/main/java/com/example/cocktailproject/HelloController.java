@@ -28,10 +28,10 @@ public class HelloController {
                 String cocktailName = searchField.getText();
                 String jsonResponse = apiCocktails.getCocktailsByName(cocktailName);
 
-                // Parse the JSON response to extract cocktail names
+
                 List<String> cocktailNames = parseCocktailNames(jsonResponse);
 
-                // Update the ListView on the JavaFX Application Thread
+
                 Platform.runLater(() -> {
                     resultsList.getItems().setAll(cocktailNames);
                 });
@@ -64,6 +64,5 @@ public class HelloController {
 
     @FXML
     public void initialize() {
-        // Initialization logic, if needed
     }
 }
